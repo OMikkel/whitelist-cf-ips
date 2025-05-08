@@ -7,7 +7,7 @@ A simple script to get the latest cloudflare CIDR ranges and update the hetzner 
 1. Run `crontab -e` to edit the cron jobs.
 2. Add the following line to run the script every day at 0 AM:
    ```
-   0 0 * * * <your shell> <path to your binary executable>
+   0 0 * * * <path to your binary> >> /path/to/logfile.log 2>&1
    ```
 
 ## Supported architectures
